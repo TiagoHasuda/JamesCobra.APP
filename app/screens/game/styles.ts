@@ -16,7 +16,7 @@ export const TopBar = styled.View`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: ${props => props.theme.colors.green};
+    background-color: ${props => props.theme.colors.primary};
 `
 
 export const ExitTextContainer = styled.TouchableOpacity`
@@ -32,6 +32,7 @@ export const ExitText = styled.Text`
 export const PauseButtonContainer = styled.TouchableOpacity`
     margin-vertical: 20px;
     margin-right: 20px;
+    border-radius: 20px;
 `
 
 export const PauseButton = styled.Text`
@@ -44,7 +45,7 @@ export const GameContainer = styled.View`
     width: ${screenWidth}px;
     height: ${screenWidth}px;
     padding: ${spacing / 2}px;
-    background-color: ${props => props.theme.colors.lightGreen};
+    background-color: ${props => props.theme.colors.primaryLight};
 `
 
 export const BlockLine = styled.View`
@@ -64,11 +65,11 @@ export const Block = styled.View<BlockProps>`
             case 'background':
                 return props.theme.colors.white
             case 'body':
-                return props.theme.colors.green
+                return props.theme.colors.secondaryLight
             case 'head':
-                return props.theme.colors.green
+                return props.theme.colors.secondary
             case 'food':
-                return props.theme.colors.darkGreen
+                return props.theme.colors.green
             default:
                 return props.theme.colors.white
         }
@@ -90,12 +91,14 @@ export const UserNickname = styled.Text`
 export const ReadyContainer = styled.TouchableOpacity`
     flex: 1;
     justify-content: center;
-    background-color: ${props => props.theme.colors.lightGreen};
+    background-color: ${props => props.theme.colors.primary};
 `
 
 export const ReadyText = styled.Text`
     font-size: 25px;
     text-align: center;
+    font-weight: bold;
+    color: ${props => props.theme.colors.white};
 `
 
 export const ControlsContainer = styled.View`
@@ -121,7 +124,7 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonContainerProps>`
     height: 100%;
     width: 100px;
     border-radius: 10px;
-    background-color: ${props => props.disabled ? props.theme.colors.gray : props.theme.colors.lightGreen};
+    background-color: ${props => props.disabled ? props.theme.colors.gray : props.theme.colors.primary};
     ${props => props.isMiddle && `
         margin-horizontal: 50px;
     `}

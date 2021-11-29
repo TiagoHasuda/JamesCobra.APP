@@ -7,7 +7,7 @@ export const Container = styled.View`
 
 export const TopBar = styled.View`
     flex-direction: row;
-    background-color: ${props => props.theme.colors.green};
+    background-color: ${props => props.theme.colors.primary};
 `
 
 export const ExitTextContainer = styled.TouchableOpacity`
@@ -23,9 +23,10 @@ export const ExitText = styled.Text`
 export const Separator = styled.View`
     height: 2px;
     width: 100%;
-    background-color: ${props => props.theme.colors.darkGreen};
+    background-color: ${props => props.theme.colors.gray};
 `
 
 export const OptionButton = styled(Button)`
     flex: 1;
+    background-color: ${props => props.theme.colors.white};
 `

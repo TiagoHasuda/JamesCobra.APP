@@ -59,7 +59,7 @@ export const Game: React.FC = () => {
                         <EndGameText>Voce ganhou!</EndGameText> :
                         <EndGameText>Voce perdeu :c</EndGameText>
                     }
-                    <EndGamePoints>Seu score:{'\n'}{room?.points} pontos</EndGamePoints>
+                    <EndGamePoints>Seu score:{'\n'}{room?.points.toString()} pontos</EndGamePoints>
                 </EndGameContainer>
             })
     }
@@ -131,7 +131,7 @@ export const Game: React.FC = () => {
         </ControlsContainer>}
         {(room?.paused && room.started) && <PauseContainer>
             <PauseBox>
-                <PauseText>O jogo está pausado</PauseText>
+                <PauseText>O jogo está pausado{!room.userTwo && `\nEsperando jogador...`}</PauseText>
                 <ContinueGameButton onPress={onContinueGame}>Continuar</ContinueGameButton>
             </PauseBox>
         </PauseContainer>}

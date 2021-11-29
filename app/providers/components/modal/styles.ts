@@ -24,6 +24,6 @@ export const ContentContainer = styled(Animated.View)`
     margin-top: auto;
     padding-top: 20px;
     border-top-width: 2px;
-    border-top-color: ${props => props.theme.colors.darkGreen};
+    border-top-color: ${props => props.theme.colors.primary};
     background-color: ${props => props.theme.colors.white};
 `

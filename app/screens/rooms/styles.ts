@@ -2,11 +2,12 @@ import styled from "styled-components/native"
 
 export const Container = styled.View`
     flex: 1;
+    background-color: ${props => props.theme.colors.white};
 `
 
 export const TopBar = styled.View`
     flex-direction: row;
-    background-color: ${props => props.theme.colors.green};
+    background-color: ${props => props.theme.colors.primary};
 `
 
 export const BackTextContainer = styled.TouchableOpacity`
@@ -44,7 +45,7 @@ export const NewRoomContainer = styled.TouchableOpacity`
     bottom: 20px;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.theme.colors.green}50;
+    background-color: ${props => props.theme.colors.primary};
 `
 
 export const NewRoomText = styled.Text`

@@ -5,7 +5,7 @@ export const Container = styled.TouchableOpacity`
     padding: 10px;
     margin-vertical: 10px;
     flex-direction: row;
-    background-color: ${props => props.theme.colors.green};
+    background-color: ${props => props.theme.colors.primaryLight};
 `
 
 export const RoomId = styled.Text`

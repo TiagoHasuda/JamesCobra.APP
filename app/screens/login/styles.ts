@@ -26,7 +26,7 @@ interface FillerProps {
 
 export const Filler = styled.View<FillerProps>`
     flex: 1;
-    background-color: ${props => !!props.color ? props.color : props.theme.colors.green};
+    background-color: ${props => !!props.color ? props.color : props.theme.colors.primary};
 `
 
 export const NicknameInput = styled(Input)`

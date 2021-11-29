@@ -4,8 +4,8 @@ export const Container = styled.View`
     width: 100%;
     border-top-width: 1px;
     border-bottom-width: 1px;
-    border-top-color: ${props => props.theme.colors.darkGreen};
-    border-bottom-color: ${props => props.theme.colors.darkGreen};
+    border-top-color: ${props => props.theme.colors.primaryLight};
+    border-bottom-color: ${props => props.theme.colors.primaryLight};
 `
 
 export const Label = styled.Text`

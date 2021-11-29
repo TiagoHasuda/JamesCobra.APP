@@ -4,7 +4,7 @@ export const Container = styled.TouchableOpacity`
     width: 100%;
     height: 50px;
     justify-content: center;
-    background-color: ${props => props.theme.colors.lightGreen};
+    background-color: ${props => props.theme.colors.primaryLight};
 `
 
 export const ButtonText = styled.Text`
