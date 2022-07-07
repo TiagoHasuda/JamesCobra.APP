@@ -19,7 +19,7 @@ export const WebsocketProvider: React.FC = ({ children }) => {
 
     useEffect(() => {
         let currSocket = (!!socket && (socket.connected || new Date().getTime() - socketTime < connectionTimeout)) ? socket : io(
-            'http://jameswebserver.ddns.net:3000',
+            'http://snake.api.jameswebserver.com',
             {
                 reconnection: true,
             }
